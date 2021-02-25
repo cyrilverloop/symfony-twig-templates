@@ -1,0 +1,12 @@
+{
+    "name": "cyril-verloop/symfony-twig-templates",
+    "description": "A base Twig template for Symfony.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cyril VERLOOP",
+            "email": "cyril.verloop@webqard.fr"
+        }
+    ]
+}
