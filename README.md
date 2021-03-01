@@ -1,6 +1,6 @@
 # symfony-twig-templates
 
-A base Twig template for Symfony.
+Twig templates for Symfony.
 
 [![License](https://img.shields.io/github/license/cyrilverloop/symfony-twig-templates)](https://github.com/cyrilverloop/symfony-twig-templates/blob/trunk/LICENSE)
 
@@ -25,7 +25,7 @@ user@host projects$ cd symfony-twig-templates
 
 ## Usage
 
-The template just needs to be referenced in the `config/packages/twig.yaml` file :
+The templates just needs to be referenced in the `config/packages/twig.yaml` file :
 
 ```yaml
 twig:
@@ -34,10 +34,16 @@ twig:
 ```
 You can also look at the `config/packages/twig.yaml` file of this project.
 
-Then, your layout can inherit the base template :
+Then, you can inherit the templates :
 
 ```twig
 {% extends "@CVSymfonyTwigTemplates/base.html.twig" %}
+{# or #}
+{% extends "@CVSymfonyTwigTemplates/layout.html.twig" %}
 
-{# You code here #}
+{# Your code here #}
 ```
+
+The documentation of each template can be found in `resources/documentations/` :
+- [base](resources/documentations/base.md)
+- [layout](resources/documentations/layout.md)

@@ -21,7 +21,7 @@
 				<title>{{ htmlHeadTitle }}</title>
 			{% endif %}
 
-			{% if metaDescription is defined %}
+			{% if metaDescription is defined and metaDescription != '' %}
 				<meta name="description" content="{{ metaDescription }}" />
 			{% endif %}
 
