@@ -26,7 +26,7 @@ Inside each tag, there is a corresponding `{% block %}` with the same name;
 
 ## Variables
 
-- **translationContext** : the translation context for `|trans({}, translationContext)`,
+- **translationContext** : the translation context used on `pageHeadTitle` and `metaDescription` variables.
 
 Those variables set some default values for the parent template (see [base template](./base.md)) :
 - **charset** : the value of the `charset` attribute for the parent `<meta />`,
@@ -37,8 +37,9 @@ defaults to `width=device-width, initial-scale=1, shrink-to-fit=no`;
 defaults to `app.request.schemeAndHttpHost ~ app.request.baseUrl ~ '/'`;
 - **faviconHref** : the value of the `href` attribute for the favicon, defaults to `app/images/favicon.png`;
 - **faviconSizes** : the value of the `sizes` attribute for the favicon, defaults to `32x32`;
-- **metaDescription** : the value of the `content` attribute for the parent `<meta />`,
-defaults to the translation of `metaDescription` of the defined `translationContext`.
+- **metaDescription** : the value of the `content` attribute for the parent `<meta />`.
+If you want a meta description, define this or it will default to `metaDescription`.
+Then, it will be translated with the defined `translationContext`.
 If you do not want to render a meta description, set this either to `false`, `null` or an empty string (`''` or `""`);
 - **canonical** : adds `app.request.schemeAndHttpHost` before a previously defined `canonical`.
 If you do not define a `canonical` variable, no `<link />` will be rendered.

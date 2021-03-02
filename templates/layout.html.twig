@@ -57,8 +57,10 @@
     {% set htmlHeadTitle=pageHeadTitle %}
 {% endif %}
 
-{% if metaDescription is not defined or metaDescription != '' %}
+{% if metaDescription is not defined %}
     {% set metaDescription='metaDescription'|trans({}, translationContext) %}
+{% elseif metaDescription != '' %}
+    {% set metaDescription=metaDescription|trans({}, translationContext) %}
 {% endif %}
 
 {% if canonical is defined %}
