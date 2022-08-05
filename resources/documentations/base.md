@@ -34,4 +34,5 @@ Those HTML tags are rendered *only if* you define the corresponding variable in 
 - **canonical** : `<link rel="canonical" href="{{ canonical }}" />`.
 
 This is always rendered :
-- **app.request.locale** : `<html lang="{{ app.request.locale }}">`, defined in Symfony configuration.
+- **app.request.locale** : `<html lang="{{ app.request.locale|replace({'_': '-'}) }}">`, defined in Symfony configuration.
+*The `replace` filter converts locales like `en_GB` into `en-GB`. It is necessary in order to pass W3C validation.*
