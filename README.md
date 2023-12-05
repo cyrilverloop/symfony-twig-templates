@@ -1,6 +1,8 @@
 # symfony-twig-templates
 
-Twig templates for Symfony.
+Twig templates for Symfony 7+.
+
+For compatibility with Symfony <7.0, see version <2.0 of this software.
 
 [![License](https://img.shields.io/github/license/cyrilverloop/symfony-twig-templates)](https://github.com/cyrilverloop/symfony-twig-templates/blob/trunk/LICENSE)
 

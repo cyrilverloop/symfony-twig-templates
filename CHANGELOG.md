@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2023-12-05
+### Added
+- "composer.lock".
+
+### Fixed
+- "symfony/asset" missing dependency.
+
+### Removed
+- Compatibility with Symfony <7.0.
+
 ## [1.1.2] - 2022-08-05
 ### Fixed
 - `base` : locales like `en_GB` are automaticaly converted into `en-GB` in order to keep W3C validation.

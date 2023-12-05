@@ -8,5 +8,8 @@
             "name": "Cyril VERLOOP",
             "email": "cyril.verloop@webqard.fr"
         }
-    ]
+    ],
+    "require": {
+        "symfony/asset": "^7.0"
+    }
 }
