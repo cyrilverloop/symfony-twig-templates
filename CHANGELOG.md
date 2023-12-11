@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Added
 - `base` : a `preloads` block.
+- `base` : a `importmap` block.
 
 ## [2.0.1] - 2023-12-10
 ### Fixed
