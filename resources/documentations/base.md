@@ -18,6 +18,7 @@ See also [Usage](../../README.md#Usage) for the Symfony configuration.
 
 - **head** : is inside the `<head>`, it contains every other blocks and variables except the `{% block body %}`;
 - **favicon** : is inside the `{% block head %}` and is empty;
+- **preloads** : is inside the `{% block head %}` and is empty;
 - **stylesheets** : is inside the `{% block head %}` and is empty;
 - **javascripts** : is inside the `{% block head %}` and is empty;
 - **body** : is inside the `<body>` and is empty.
